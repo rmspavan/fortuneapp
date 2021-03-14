@@ -1,8 +1,8 @@
 # Code
 
 mkdir ~/projs
-git clone https://github.com/devteds/e9-cloudformation-docker-ecs.git docker-on-ecs
-cd docker-on-ecs
+git clone https://github.com/rmspavan/fortuneapp.git fortuneapp
+cd fortuneapp
 
 # Dockerize a fortuneapp to test
 # Run on local
@@ -29,4 +29,4 @@ aws cloudformation create-stack --template-body file://$PWD/infra/iam.yml --stac
 
 aws cloudformation create-stack --template-body file://$PWD/infra/app-cluster.yml --stack-name fortuneapp-cluster
 
-aws cloudformation create-stack --template-body file://$PWD/infra/api.yml --stack-name fortuneapp
+aws cloudformation create-stack --template-body file://$PWD/infra/app.yml --stack-name fortuneapp
