@@ -27,6 +27,6 @@ aws cloudformation create-stack --template-body file://$PWD/infra/vpc.yml --stac
 
 aws cloudformation create-stack --template-body file://$PWD/infra/iam.yml --stack-name iam --capabilities CAPABILITY_IAM
 
-aws cloudformation create-stack --template-body file://$PWD/infra/app-cluster.yml --stack-name app-cluster
+aws cloudformation create-stack --template-body file://$PWD/infra/app-cluster.yml --stack-name fortuneapp-cluster
 
-aws cloudformation create-stack --template-body file://$PWD/infra/api.yml --stack-name api
+aws cloudformation create-stack --template-body file://$PWD/infra/api.yml --stack-name fortuneapp
