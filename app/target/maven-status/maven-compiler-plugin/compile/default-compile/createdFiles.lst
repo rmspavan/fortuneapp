@@ -1,0 +1,6 @@
+org\fortune\application\controller\FortuneApplicationController.class
+org\fortune\application\service\FortuneApplicationService.class
+org\fortune\application\bean\HealthCheck.class
+org\fortune\application\boot\FortuneApplication.class
+org\fortune\application\bean\Message.class
+org\fortune\application\bean\HealthStatus.class

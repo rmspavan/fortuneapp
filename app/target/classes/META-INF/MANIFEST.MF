@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: FortuneApplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: HP
+Implementation-Vendor-Id: org.fortune.application
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/FortuneApplication
+Created-By: Maven Integration for Eclipse
+
