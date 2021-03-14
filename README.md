@@ -1,7 +1,7 @@
 # Code
 
 mkdir ~/projs
-git clone https://github.com/rmspavan/fortuneapp.git fortuneapp
+git clone https://github.com/rmspavan/fortuneapp.git 
 cd fortuneapp
 
 # Dockerize a fortuneapp to test
@@ -10,7 +10,7 @@ docker build -t fortuneapp .
 docker run -it -p 8081:8081 --rm fortuneapp:latest
 open http://localhost:8081/
 open http://localhost:8081/healthcheck
-open http://localhost:8081/vi/fortune
+open http://localhost:8081/v1/fortune
 
 
 # Push Docker Image to ECR
@@ -30,3 +30,6 @@ aws cloudformation create-stack --template-body file://$PWD/infra/iam.yml --stac
 aws cloudformation create-stack --template-body file://$PWD/infra/app-cluster.yml --stack-name fortuneapp-cluster
 
 aws cloudformation create-stack --template-body file://$PWD/infra/app.yml --stack-name fortuneapp
+
+# Access API
+http://ecs-services-948840467.ap-south-1.elb.amazonaws.com/v1/fortune
